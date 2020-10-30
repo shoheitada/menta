@@ -17,6 +17,7 @@ Route::get('/', function () {
 */
 
 Route::get('/' , 'LoginController@Login');
-Route::get('/view/Login' , 'LoginController@Login');
+Route::post('/view/Login' , 'LoginController@Login');
 Route::get('/view/Register' ,'Registercontroller@Register');
-
+Route::post('/view/Register' ,'Registercontroller@Confirm');
+Route::post('/view/Home' ,'Homecontroller@Home');

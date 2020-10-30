@@ -8,7 +8,7 @@
     <hr>
     <div align="center">
          <table border="0">
-            <form action="/view/Register" method="get">
+            <form action="/view/Register" method="post">
             @csrf
              <tr>
                 <th>
