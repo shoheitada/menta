@@ -27,8 +27,8 @@ class ValiDemoRequest extends FormRequest
             //
             'name' => 'required',
             'email' => 'required',
-            'password' => 'required|min:7',
-            'confirm_password' => 'required|same:password',
+            'password' => 'required',
+            'confirm_passwaord' => 'required',
         ];
     }
     public function messages()
@@ -36,10 +36,9 @@ class ValiDemoRequest extends FormRequest
       return [
         'name.required' => 'nameを入力してください',
         'email.required' => 'emailを入力してください',
-        'password.required' => 'passwordを入力してください',
-        'password.min' => 'passwordは7文字以上で入力してください',
-        'confirm_password.required' => 'confirm_passwordを入力してください',
-        'confirm_password.same' => 'confirm_passwordが異なります',
+        'password.required' => 'passwaordを入力してください',
+        'confirm_passwaord.required' => 'confirm_passwaordを入力してください',
+        
       ];
     }
 }

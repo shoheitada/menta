@@ -9,6 +9,6 @@ class HomeController extends Controller
 {
     //ホーム画面
     public function Home(){
-        return view('home');
+        return view('Home');
     }
 }
