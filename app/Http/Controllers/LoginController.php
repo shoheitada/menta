@@ -8,7 +8,7 @@ class LoginController extends Controller
 {
     //ログイン画面
     public function Login(){
-        return view('Login');
+        return view('login');
     }
 }
 ?>

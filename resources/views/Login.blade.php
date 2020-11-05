@@ -8,14 +8,14 @@
     <hr>
     <div align="center">
          <table border="0">
-            <form action="/view/Register" method="post">
+            <form action="/view/register" method="post">
             @csrf
              <tr>
                 <th>
                    E-Mail Address
                 </th>
                 <td>
-                  <input type="text" name="mail" value="" size="24">
+                  <input type="text" name="email" value="" size="24">
                 </td>
              </tr>
              <tr>
