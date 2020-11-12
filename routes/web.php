@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Route::get('/' , 'LoginController@Login');
 Route::post('/login' , 'LoginController@Login');
-Route::get('/view/register' ,'RegisterController@Register');
-Route::post('/view/register' ,'RegisterController@Register');
-Route::post('/view/confirm' ,'RegisterController@Confirm');
-Route::get('/view/home' ,'HomeController@Home');
+Route::get('/register' ,'RegisterController@Register');
+Route::post('/register' ,'RegisterController@Register');
+Route::post('/confirm' ,'RegisterController@Confirm');
+Route::get('/home' ,'HomeController@Home');
