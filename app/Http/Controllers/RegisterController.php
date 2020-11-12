@@ -9,13 +9,15 @@ class RegisterController extends Controller
 {
     //新規登録
     public function Register(){
-      return view('Register');
+     return view('register');
     }
 
-    public function Confirm(\App\Http\Requests\ValiDemoRequest $request)
+    public function Confirm(ValiDemoRequest $request)
     {
         $data = $request->all();
-   return view('Register')->with($data);
+        //data = $request->all();
+        //dd($request->validate());
+       //return view('register')->with($data);
+   return view('home',compact('data'));
     }
 }
-?>
