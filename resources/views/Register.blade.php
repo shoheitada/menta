@@ -13,7 +13,7 @@
     @endif
     <div align="center">
          <table border="0">
-            <form action="/view/confirm" method="post">
+            <form action="/confirm" method="post">
             @csrf
             <tr>
                 <th>
