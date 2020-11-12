@@ -6,9 +6,14 @@
 <body>
     <h1>Register</h1>
     <hr>
+    @if($errors->any())
+    @foreach($errors->all() as $error)
+    <div>{{$error}}</div>
+    @endforeach
+    @endif
     <div align="center">
          <table border="0">
-            <form action="" method="post">
+            <form action="/confirm" method="post">
             @csrf
             <tr>
                 <th>
@@ -23,7 +28,7 @@
                    E-Mail Address
                 </th>
                 <td>
-                  <input type="text" name="mail" value="" size="24">
+                  <input type="text" name="email" value="" size="24">
                 </td>
              </tr>
              <tr>
@@ -31,7 +36,7 @@
                    Password
                </th>
                <td>
-                  <input type="password" name="passwaord" value="" size="24">
+                  <input type="password" name="password" value="" size="24">
                </td>
              </tr>
              <tr>
@@ -39,7 +44,7 @@
                    Confirm Password
                </th>
                <td>
-                  <input type="password" name="confirm_passwaord" value="" size="24">
+                  <input type="password" name="confirm_password" value="" size="24">
                </td>
              </tr>
              <tr>
